@@ -14,7 +14,7 @@ require ROOT . '/app/dbloader.php';
 
 // Instantiate application
 $app = new \Slim\Slim(require_once ROOT . '/app/config/app.php');
-$app->setName('RedSlim');
+$app->setName('Active Slim API');
 
 
 // For native PHP session
@@ -52,34 +52,6 @@ $app->view()->appendData(
 foreach(glob(ROOT . '/app/controllers/*.php') as $router) {
 	include $router;
 }
-
-// Disable fluid mode in production environment
-$app->configureMode(SLIM_MODE_PRO, function () use ($app) {
-    // note, transactions will be auto-committed in fluid mode
-    R::freeze(true);  
-});
-
-/*
-|--------------------------------------------------------------------------
-| Configure Twig
-|--------------------------------------------------------------------------
-|
-| The application uses Twig as its template engine. This script configures 
-| the template paths and adds some extensions.
-|
-*/
-
-$view = $app->view();
-$view->parserOptions = array(
-    'debug' => true,
-    'cache' => ROOT . '/app/storage/cache/twig',
-    'auto_reload' => true,
-    //'strict_variables' => true
-);
-
-$view->parserExtensions = array(
-    new \Slim\Views\TwigExtension(),
-);
 
 /*
 |--------------------------------------------------------------------------

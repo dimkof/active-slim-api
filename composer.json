@@ -1,25 +1,25 @@
 {
-    "name": "techsterx/active-slim-api",
-    "type": "library",
-    "description": "Active Slim API (Slim + ActiveRecord), a PHP micro API",
-    "keywords": ["microframework", "rest", "router"],
-    "homepage": "https://github.com/techsterx/active-slim-api",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "William Rex",
-            "email": "rexw3035@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.2",
-        "slim/slim": "2.*",
-        "slim/extras": "2.*",
-        "slim/views": "0.1.*",
-        "slim/strong": "*@dev",
-	"php-activerecord/php-activerecord": "dev-master"
-    },
-    "config": {
-        "preferred-install": "dist"
-    }
+	"name": "techsterx/active-slim-api",
+	"type": "project",
+	"description": "Active Slim API (Slim + ActiveRecord), a PHP micro API",
+	"keywords": ["microframework", "rest", "router"],
+	"homepage": "https://github.com/techsterx/active-slim-api",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "William Rex",
+			"email": "rexw3035@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.3.2",
+		"slim/slim": "2.*",
+		"slim/extras": "2.*",
+		"slim/views": "0.1.*",
+		"slim/strong": "*@dev",
+		"php-activerecord/php-activerecord": "dev-master"
+	},
+	"config": {
+		"preferred-install": "dist"
+	}
 }

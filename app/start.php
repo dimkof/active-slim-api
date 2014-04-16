@@ -6,10 +6,6 @@ require ROOT . '/app/dbloader.php';
 |--------------------------------------------------------------------------
 | Create Slim Application
 |--------------------------------------------------------------------------
-|
-| The first thing we will do is create a new Slim application instance
-| which serves as the "glue" for all the components of RedSlim.
-|
 */
 
 // Instantiate application
